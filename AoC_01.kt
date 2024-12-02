@@ -2,7 +2,7 @@ import java.io.File
 import java.io.InputStream
 import kotlin.math.abs
 
-fun part1(path: String) {
+private fun part1(path: String) {
     val inputStream: InputStream = File(path).inputStream()
     val stringArray = inputStream.bufferedReader().use { it.readText().split("\r\n") }.map { e->e.split(' ') }
     val leftArray = stringArray.map { e -> e[0].toInt() }.toMutableList()
@@ -25,7 +25,7 @@ fun part1(path: String) {
     println(sum)
 }
 
-fun part2(path: String) {
+private fun part2(path: String) {
     val inputStream: InputStream = File(path).inputStream()
     val stringArray = inputStream.bufferedReader().use { it.readText().split("\r\n") }.map { e->e.split(' ') }
     val leftArray = stringArray.map { e -> e[0].toInt() }.toMutableList()
