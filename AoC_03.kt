@@ -1,8 +1,8 @@
 import java.io.File
 import java.io.InputStream
 
-val regex1 = "mul\\([0-9]{1,3},[0-9]{1,3}\\)".toRegex()
-val regex2 = "mul\\([0-9]{1,3},[0-9]{1,3}\\)|do\\(\\)|don't\\(\\)".toRegex()
+private val regex1 = "mul\\([0-9]{1,3},[0-9]{1,3}\\)".toRegex()
+private val regex2 = "mul\\([0-9]{1,3},[0-9]{1,3}\\)|do\\(\\)|don't\\(\\)".toRegex()
 
 private fun part1(path: String) {
     val inputStream: InputStream = File(path).inputStream()
