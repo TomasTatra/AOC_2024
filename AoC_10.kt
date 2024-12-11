@@ -55,7 +55,8 @@ private fun part2(path: String) {
     }
     var sum: Long = 0
     sum += zeros.sumOf { e -> findTrails(e, map).size }
-    println(sum)}
+    println(sum)
+}
 
 fun main() {
     val path = "C:\\Users\\tviki\\Desktop\\VS\\AOC\\example.txt"
